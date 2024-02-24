@@ -1,0 +1,693 @@
+<!DOCTYPE html> <html style="max-width:645.507px;transition:all 0s ease-in-out 0s" class=translated-ltr><!--
+--><meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<meta http-equiv=X-UA-Compatible content="ie=edge">
+<title>Apktool M FAQ</title>
+<style>.light{background-color:#ffffff}.light .section_title,.light .content_text,.light .answer_text{color:#424242}.light .content_text{background:#ddebf7}.light .answer_text{background:#dddddd}section{margin-bottom:20px}.section_title{border:none;text-align:center;font-size:1.3em;font-weight:bold;padding:4px;margin-bottom:10px}.content_text{border:1px solid #c0c6d2;border-radius:3px;padding:6px}a:active,a:hover,a{text-decoration:none;color:#2196F3}.details_block{margin-bottom:10px;border-radius:3px;overflow:auto}.question_title{border:1px solid #2196F3;padding:6px;background:#2196F3;color:#ffffff}.answer_text{border:1px solid #2196F3;border-bottom-left-radius:3px;border-bottom-right-radius:3px;padding:6px}.warning_text{color:red}</style>
+<style>@-webkit-keyframes spinner-rotator{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(270deg);transform:rotate(270deg)}}@keyframes spinner-rotator{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(270deg);transform:rotate(270deg)}}@-webkit-keyframes spinner-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;-webkit-transform:rotate(135deg);transform:rotate(135deg)}100%{stroke-dashoffset:187;-webkit-transform:rotate(450deg);transform:rotate(450deg)}}@keyframes spinner-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;-webkit-transform:rotate(135deg);transform:rotate(135deg)}100%{stroke-dashoffset:187;-webkit-transform:rotate(450deg);transform:rotate(450deg)}}</style><meta name=referrer content=no-referrer><style>.sf-hidden{display:none!important}</style><link rel=canonical href=http://127.0.0.1:21424/sdcard/0/storage/9C33-6BBD/Download/Apk%20Tool%20M/faq_en.html><meta http-equiv=content-security-policy content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;"><style>img[src="data:,"],source[src="data:,"]{display:none!important}</style></head>
+<body class=light>
+ <section class=section_zero>
+ <div class=section_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Treść </font></font></div>
+ <div class=content_text>
+ <li><a href="https://4pda.to/forum/index.php?showtopic=1002506&amp;view=findpost&amp;p=116526321"><b><font style=vertical-align:inherit><font style=vertical-align:inherit>Zaktualizowano często zadawane pytania na temat 4PDA (w języku rosyjskim)</font></font></b></a></li>
+ <li><a href=#section_one><font style=vertical-align:inherit><font style=vertical-align:inherit>Szybka edycja</font></font></a></li>
+ <li><a href=#section_two><font style=vertical-align:inherit><font style=vertical-align:inherit>Pełna edycja - dekompilacja i montaż</font></font></a></li>
+ <li><a href=#section_three><font style=vertical-align:inherit><font style=vertical-align:inherit>Tłumaczenie aplikacji</font></font></a></li>
+ <li><a href=#section_four><font style=vertical-align:inherit><font style=vertical-align:inherit>Funkcja zapobiegająca podziałowi</font></font></a></li>
+ <li><a href=#section_five><font style=vertical-align:inherit><font style=vertical-align:inherit>Tworzenie niestandardowego podpisu</font></font></a></li>
+ <li><a href=#section_six><font style=vertical-align:inherit><font style=vertical-align:inherit>Menedżer plików</font></font></a></li>
+ <li><a href=#section_seven><font style=vertical-align:inherit><font style=vertical-align:inherit>Różny</font></font></a></li>
+ <li><a href=#section_eight><font style=vertical-align:inherit><font style=vertical-align:inherit>MPatcher</font></font></a></li>
+ </div>
+ </section>
+ <section id=section_one>
+ <div class=section_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Szybka edycja </font></font></div>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit>Co to jest szybka edycja?</font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Jest to edycja niektórych podstawowych danych aplikacji bez konieczności dekompilacji i odbudowy. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit>Do czego służy szybka edycja?</font></font></summary>
+ <div class=answer_text>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>aby wyświetlić informacje o aplikacji (apk), jej uprawnieniach i preferowanym miejscu instalacji (nie mylić z rzeczywistym miejscem instalacji);</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>aby zmienić nazwę aplikacji;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>zmienić nazwę pakietu aplikacji (sklonować aplikację);</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>aby zastąpić w aplikacjach zarówno ikony wektorowe (generowane automatycznie), adaptacyjne, jak i zwykłe ikony rastrowe;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>aby ustawić preferowaną lokalizację instalacji aplikacji;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>zmienić minimalną lub docelową wersję SDK;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>dostosować aplikację do Android TV;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>aby usunąć go z Manifestu: </font></font><code>android:isSplitRequired, android:debuggable,
+ android:testOnly</code><font style=vertical-align:inherit><font style=vertical-align:inherit>. </font></font></li>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Dlaczego potrzebuję elementu „Uprawnienia”? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Aby wyświetlić uprawnienia aplikacji oraz je włączyć lub wyłączyć. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Czy mogę konwertować obrazy do formatu wektorowego? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Tak. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Obsługiwane są formaty PNG, JPEG, Webp i Svg. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Konwersja odbywa się przy użyciu typu </font></font><u><font style=vertical-align:inherit><font style=vertical-align:inherit>{old file name}type _vector.xml</font></font></u><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Podczas konwersji można poprawić lub obniżyć jakość obrazu. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Czy można przekonwertować obraz svg na VectorDrawable? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Tak. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Dostępne w podglądzie wielokątów SVG/VectorDrawable (nieskompilowane) </font></font><br>
+ <u><font style=vertical-align:inherit><font style=vertical-align:inherit>Uwaga:</font></font></u><font style=vertical-align:inherit><font style=vertical-align:inherit> plik svg musi mieć prostą i odpowiednią strukturę, w przeciwnym razie parser może go nie przetworzyć poprawnie i będziesz musiał go znormalizować ręcznie, aby działał poprawnie. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Czy można konwertować obrazy bitmapowe na VectorDrawable? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Tak. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> To nie jest panaceum. </font><font style=vertical-align:inherit>Może mieć duży błąd w śledzeniu - zależy to od złożoności geometrii obrazu źródłowego. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak zastąpić ikonę aplikacji? </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Przygotuj niezbędną ikonę, żelatynowo, w formacie i rozmiarze png, najlepiej nie większym niż 192x192px. </font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz żądaną aplikację → Szybka edycja.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>W lewym górnym rogu widoczna jest ikona zainstalowanej aplikacji oraz jej nazwa.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Stuknij w samą ikonę i wybierz wcześniej przygotowaną ikonę.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>W razie potrzeby zaznacz niezbędne pola ustawień: „zamień ikonę adaptacyjną” „ikona wysokiej jakości (większy rozmiar)</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz także plik podpisu, jeśli nie instalowałeś go wcześniej.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Kliknij „Zapisz”.</font></font></li>
+ </ol><font style=vertical-align:inherit><font style=vertical-align:inherit> Gotowy plik będzie znajdował się w tym samym folderze, obok wybranej aplikacji, z etykietą mod na końcu. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak wyodrębnić ikonę aplikacji? </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz żądaną aplikację → Szybka edycja.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Długie dotknięcie ikony.</font></font></li>
+ </ol><font style=vertical-align:inherit><font style=vertical-align:inherit> Wyodrębniona konka będzie znajdować się w tym samym folderze, obok wybranej aplikacji. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak zmienić minimalną lub docelową wersję pakietu SDK? </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz żądaną aplikację → Szybka edycja.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wprowadź niezbędne zmiany w ustawieniach „Minimalna wersja SDK” lub „Docelowa wersja SDK”.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Kliknij „Zapisz”.</font></font></li>
+ </ol><font style=vertical-align:inherit><font style=vertical-align:inherit> Gotowy plik będzie znajdował się w tym samym folderze, obok wybranej aplikacji, z etykietą mod na końcu. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak zmienić nazwę aplikacji? </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz żądaną aplikację → Szybka edycja.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Następnie zmień nazwę żądanej aplikacji na wymaganą.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz plik podpisu, jeśli nie instalowałeś go wcześniej.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Kliknij „Zapisz”.</font></font></li>
+ </ol><font style=vertical-align:inherit><font style=vertical-align:inherit> Gotowy plik zostanie umieszczony obok wybranej aplikacji z zaznaczonym modem na końcu. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Dlaczego nie mogę zmienić „Nazwy aplikacji”? </font><font style=vertical-align:inherit>(Element jest nieaktywny.) </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Prawdopodobnie dlatego, że minimalna wersja SDK aplikacji jest wyższa niż wersja systemu. </font><font style=vertical-align:inherit>W tych warunkach edycja jest ograniczona. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Najpierw musisz obniżyć minimalną wersję pakietu SDK, a następnie edytować wszystko inne. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak zmienić nazwę pakietu aplikacji? </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz żądaną aplikację → „Szybka edycja”.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Następnie zmień nazwę pakietu.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz plik podpisu, jeśli nie instalowałeś go wcześniej.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Kliknij „Zapisz”.</font></font></li>
+ </ol><font style=vertical-align:inherit><font style=vertical-align:inherit> Gotowy plik zostanie umieszczony obok wybranej aplikacji z zaznaczonym modem na końcu. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak zrobić klon apk w tej aplikacji? </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz żądaną aplikację → „Szybka edycja”.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Następnie zmień nazwę pakietu, na przykład dodając lub usuwając ostatnie litery w nazwie.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz plik podpisu, jeśli nie instalowałeś go wcześniej.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Kliknij „Zapisz”.</font></font></li>
+ </ol><font style=vertical-align:inherit><font style=vertical-align:inherit> Gotowy plik zostanie umieszczony obok wybranej aplikacji z zaznaczonym modem na końcu. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak sklonować aplikację podczas szybkiej edycji? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Program podczas szybkiej edycji zmienia następujące parametry: AndroidManifest.xml i Resources.arsc. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak dostosować aplikację do Android TV? </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz żądaną aplikację → „Szybka edycja”.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Następnie zaznacz pole „Dostosuj do Android TV”.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz plik podpisu, jeśli nie instalowałeś go wcześniej.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Kliknij „Zapisz”.</font></font></li>
+ </ol><font style=vertical-align:inherit><font style=vertical-align:inherit> Gotowy plik zostanie umieszczony obok wybranej aplikacji z zaznaczonym modem na końcu. </font><font style=vertical-align:inherit>Ikona aplikacji służy jako baner. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Co powinienem zrobić, jeśli aplikacja nie instaluje się po szybkiej edycji? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Sprawdź, czy właśnie nie podpisałeś paczki? </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> W trybie szybkiej edycji wybierz podpis. </font><font style=vertical-align:inherit>Domyślnie wybierz opcję „nie podpisuj”, jeśli wcześniej nie korzystałeś z podpisu. </font></font></div>
+ </details>
+ </section>
+ <section id=section_two>
+ <div class=section_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Pełna edycja - dekompilacja i montaż </font></font></div>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Co to jest dekompilacja i do czego służy? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> decompile arsc+dex-tłumaczy kod binarny na format czytelny dla człowieka. </font><font style=vertical-align:inherit>Wymagane do edycji zasobów aplikacji (resources.arsc) i asemblera Smali (kod). </font><font style=vertical-align:inherit>A także dla funkcji wymagających tej dekompilacji - dostępu do informacji, stosowania poprawek, tłumaczenia... </font></font><p><em><font style=vertical-align:inherit><font style=vertical-align:inherit>Rekompilacja wymaga obecności plików binarnych aapt. </font><font style=vertical-align:inherit>Żądanie instalacji pojawia się przy pierwszym uruchomieniu aplikacji. </font><font style=vertical-align:inherit>Jeśli tego nie zrobiłeś, pobieranie odbywa się w „Ustawieniach” Kompiluj i dekompiluj „Zamień narzędzia” Pobierz dla ... ”</font></font></em></p>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak zdekompilować aplikację? </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz wymaganą aplikację.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Kliknij to.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Otworzy się wyskakujące menu.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz „Dekompiluj”.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Zaznaczamy elementy, które wymagają dekompilacji:</font></font></li>
+ <ul>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>„Dekompiluj zasoby”</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>„Dekompilujclasses.dex” lub „Dekompiluj wszystkie pliki*.dex”. </font></font><br>
+ <em><font style=vertical-align:inherit><font style=vertical-align:inherit>(Pozycja „all *.dex” odpowiada za indeksy w zagnieżdżonych folderach: np. w aktywach, mthook itp.)</font></font></em>
+ </li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>A także, jeśli to konieczne, „Dekompilacja dodatkowych zasobów” z wyborem miejsca dekompilacji.</font></font></li>
+ </ul>
+ </ol><font style=vertical-align:inherit><font style=vertical-align:inherit> Po pomyślnej dekompilacji pojawi się powiadomienie dźwiękowe i dialogowe, jeśli zostało to wcześniej włączone w Ustawieniach. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak ponownie skompilować aplikację? </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wewnątrz projektu kliknij etykietę „Utwórz projekt” nad oknem eksploratora.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>W oknie kompilacji wybierz narzędzie do kompilacji zasobów - aapt lub aapt2.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Jeśli to konieczne, możesz także określić automatyczne podpisywanie.</font></font></li>
+ </ol><font style=vertical-align:inherit><font style=vertical-align:inherit> Dziennik jest wyświetlany w czasie rzeczywistym. </font><font style=vertical-align:inherit>Możesz śledzić etapy, komentarze i błędy podczas procesu kompilacji. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Po zakończeniu dziennik zostanie zatrzymany (będzie to widoczne). </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Po pomyślnej kompilacji pojawi się powiadomienie dźwiękowe i dialogowe, jeśli zostało to wcześniej włączone w Ustawieniach. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Na dole zostaniesz również poproszony o natychmiastowe zainstalowanie zbudowanej aplikacji. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Gdzie jest zapisywana aplikacja po zbudowaniu? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Do folderu ze zdemontowaną aplikacją. </font><font style=vertical-align:inherit>W katalogu głównym projektu (obok apktool.json) </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Czy można dekompilować wiele plików jednocześnie? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Tak, ale lepiej jest dekompilować kilka z rzędu, ponieważ jeśli będziesz dekompilować jednocześnie, możesz nie mieć wystarczającej ilości pamięci.</font></font><br><br>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak to zrobić? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Wybierz kilka plików i naciśnij długo, aby otworzyć menu. </font></font><br>
+ <u><font style=vertical-align:inherit><font style=vertical-align:inherit>Uwaga! </font></font></u><font style=vertical-align:inherit><font style=vertical-align:inherit> Działa to w przypadku plików tego samego typu. </font><font style=vertical-align:inherit>Jeśli wybrane zostanie coś innego niż apk, menu nie będzie zawierało żadnych pozycji. </font></font></div>
+ </details>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak zmienić folder, w którym będą zapisywane aplikacje? </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Ustawienia → „Kompiluj i dekompiluj” → „Ustaw katalog wyjściowy zainstalowanych aplikacji” </font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Przejdź do żądanego folderu, dotknij wiersza „ścieżka” - ustaw katalog wyjściowy.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Możesz także ustawić folder wyjściowy bezpośrednio w menedżerze plików.</font></font></li>
+ </ol>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Co to jest pozycja „Katalog wyjściowy zainstalowanych aplikacji”? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Jest to katalog, do którego będą eksportowane/wyodrębniane pliki APK do dalszej pracy z menu Aplikacje. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak zastąpić zasoby w pliku „.apk”? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Najpierw musisz zdekompilować, a następnie skopiować/wkleić pliki i zbudować. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Co powinienem zrobić, jeśli aplikacja nie chce się zbudować, chociaż wszystko zostało wykonane bez błędów lub w ogóle nic nie zmieniłem w apce, tylko ją przekompilowałem? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Zmień wersję aapt. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit>Wyświetl dziennik poziomu zdarzenia Ostrzeżenie. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit>Generalnie spójrz na logi – tam należy wskazać przyczynę. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jaka jest kompatybilność z projektami Apktool? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Apktool M pozwala budować projekty, które są analizowane za pomocą zwykłego Apktool. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Przed budowaniem Apktool M konwertuje plik .yml do formatu .json. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Informacje o procesie można śledzić za pomocą dziennika. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Czy Apktool M może współpracować z aplikacjami systemowymi? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Tak to mozliwe.</font></font><br><br>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak to zrobić? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Przed rozpoczęciem pracy z takimi apkami należy zaimportować struktury apk za pomocą elementu w menu kontekstowym tej apki. </font><font style=vertical-align:inherit>Import odbywa się na wszystkich takich aplikacjach. </font></font><p><font style=vertical-align:inherit><font style=vertical-align:inherit>Ścieżka podstawowa: /system/framework/..</font></font></p><font style=vertical-align:inherit><font style=vertical-align:inherit> Mogą być również zlokalizowane w /system/vendor/framework itp. w sąsiednich katalogach. </font><font style=vertical-align:inherit>Jeśli te katalogi istnieją (rzadkie zjawisko). </font></font><br><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Przykład frameworków:</font></font><br>
+ <img align=center alt class=image src="data:image/webp;base64,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" width=100%>
+ <p><font style=vertical-align:inherit><font style=vertical-align:inherit>Następnie zdekompiluj i skompiluj jako zwykłą apkę. </font><font style=vertical-align:inherit>Aby zapisać oryginalny META-INF i manifest – włącz opcję „Dopasuj do oryginału” w ustawieniach dekompilacji.</font></font></p>
+ </div>
+ </details>
+ </div>
+ </details>
+ <details class=details_block open>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Wyjaśnienie punktów w sekcji „Kompilacja i dekompilacja”. </font></font></summary>
+ <div class=answer_text>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Folder wyjściowy </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Ścieżka, do której zainstalowane aplikacje zostaną wyeksportowane/wyodrębnione z zakładki „Aplikacje”. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Użyj aapt2 </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Dodaje drugą wersję narzędzia do elementu wyboru wersji aapt przed budowaniem. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Debugowanie informacji </font></font></summary>
+ <div class=answer_text>
+ <p><font style=vertical-align:inherit><font style=vertical-align:inherit>Podczas budowania dane debugowania są przechowywane w plikach Smali, takich jak </font></font><code>.line, .param</code><font style=vertical-align:inherit><font style=vertical-align:inherit>itd.</font></font></p>
+ 
+ <u><font style=vertical-align:inherit><font style=vertical-align:inherit>Uwaga:</font></font></u><br><font style=vertical-align:inherit><font style=vertical-align:inherit> te dane są wymagane wyłącznie do debugowania aplikacji w trybie debugowania. </font><font style=vertical-align:inherit>A także do wąsko ukierunkowanego debugowania awarii Smali w Logcat (rzadkie zjawisko, może pomóc jako kotwica w linii powodującej awarię). </font><font style=vertical-align:inherit>Nie wpływają one na wykonanie kodu. </font><font style=vertical-align:inherit>Dane te mogą być również pomocne podczas edycji asemblera Smali jako punktów odniesienia i tym podobnych (dla modelarzy). </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Tryb debugowania </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Zapisuje </font></font><code>
+ &lt;application /&gt;
+ </code><font style=vertical-align:inherit><font style=vertical-align:inherit>wartość atrybutu w manifeście w tagu </font></font><code>android:debuggable</code><font style=vertical-align:inherit><font style=vertical-align:inherit>do </font></font><code>true</code><font style=vertical-align:inherit><font style=vertical-align:inherit>. </font><font style=vertical-align:inherit>Powiadamia system, że jest to aplikacja do debugowania. </font><font style=vertical-align:inherit>Umożliwia rozszerzenie dostępu do logowania tej aplikacji. </font><font style=vertical-align:inherit>Interakcja z funkcjonalnością tej funkcji jest możliwa tylko przy pomocy specjalnych narzędzi (takich jak Android Studio, a także debugowanie na poziomie ADB itp.). </font><font style=vertical-align:inherit>Ta opcja nie dotyczy Logcat - liczba wpisów debugowania w logu systemowym nie ulegnie zmianie w przypadku zmiany tego parametru. </font></font><p><font style=vertical-align:inherit><font style=vertical-align:inherit>Aby określić taką aplikację jako bieżącą do debugowania, wybierz ją w „Ustawieniach systemu” Dla programistów „Aplikacja debugowania” (ścieżki mogą się różnić).</font></font></p>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Pełny </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Podczas kompilacji wyświetla ostateczny stan każdego z plików w dzienniku po jego skompilowaniu. </font><font style=vertical-align:inherit>Nie włączaj tej funkcji, jeśli nie musisz. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Pasujące do oryginału </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Umożliwia zapisanie oryginalnego META-INF i skrótu manifestu, respektując oryginalne skróty zasobów. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Ten tryb pozwala na edycję tylko Smali – jeśli spróbujesz zbudować edytowany plik w res/..., zostanie on usunięty w ostatecznej wersji apk, ponieważ nie pasuje do oryginalnego skrótu (zmodyfikowanego). </font></font><p>
+ <span class=warning_text><em><font style=vertical-align:inherit><font style=vertical-align:inherit>To pytanie wymaga wyjaśnienia.</font></font></em></span></p>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Analiza wszystkich Smalisedit </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Przyspiesza analizę plików w Smali. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Dodaj „APKTOOL_DUMMY” </font></font></summary>
+ <div class=answer_text>
+ <p><font style=vertical-align:inherit><font style=vertical-align:inherit>Domyślnie identyfikatory zasobów w pliku Resources.arsc są ustawione w postępie arytmetycznym. </font><font style=vertical-align:inherit>W niektórych przypadkach może być uszkodzony – niektóre miejsca wewnątrz typów wartości mogą nie zostać wypełnione (są wolne).</font></font></p>
+ <p><font style=vertical-align:inherit><font style=vertical-align:inherit>Te miejsca są ustawiane ze stubu APKTOOL_DUMMY, aby przywrócić integralność progresji. </font><font style=vertical-align:inherit>Linie te nie są przez nikogo używane i nie mają na nic wpływu.</font></font></p>
+ <u><font style=vertical-align:inherit><font style=vertical-align:inherit>Mała uwaga:</font></font></u><br>
+ <p><font style=vertical-align:inherit><font style=vertical-align:inherit>Jeśli usuniesz obiekt zasobu z res/values/public.xml, to podczas kompilacji będzie on próbował znaleźć takie wolne miejsce i ustawić w nim swój identyfikator. </font><font style=vertical-align:inherit>W przypadku braku wolnych miejsc, zostanie ono dodane na końcu listy pozycji w danej kategorii. </font><font style=vertical-align:inherit>Nie zaleca się tego robić w przypadku identyfikatorów obiektów określonych w Smali – spowoduje to awarię, ponieważ zasób określony przez identyfikator został przeniesiony (jako taki już nie istnieje).</font></font></p>
+ <p><font style=vertical-align:inherit><font style=vertical-align:inherit>Usunięcie go public.xml zmusi Apktool do stworzenia progresji od zera – wtedy APKTOOL_DUMMY nie zostanie nigdzie zainstalowany, ponieważ pomiędzy ID początkowym i końcowym nie ma wolnych spacji.</font></font></p>
+ <p><font style=vertical-align:inherit><font style=vertical-align:inherit>O potrzebie APKTOOL_DUMMY decyduje wyłącznie użytkownik. </font><font style=vertical-align:inherit>Może to być również wymagane, jeśli zdekompilowany projekt ma specyfikację. </font><font style=vertical-align:inherit>strukturę pomiędzy identyfikatorami (w szczególności ze względu na niestandardowe atrybuty i/lub zaciemnianie).</font></font></p>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Sformatuj HTML </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Zawartość wszystkich plików .html i. </font><font style=vertical-align:inherit>htm (?) zostanie sformatowany zgodnie ze składnią XML. </font><font style=vertical-align:inherit>Może to zakłócić wyświetlanie wyjściowej strony HTML. </font><font style=vertical-align:inherit>Jest instalowany tylko w razie potrzeby. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Usuń folder „build”. </font></font></summary>
+ <div class=answer_text>
+ <p><font style=vertical-align:inherit><font style=vertical-align:inherit>Podczas kompilacji pliki DEX i ARSC są buforowane w folderze kompilacji. </font><font style=vertical-align:inherit>Jeśli nie zmieniłeś zasobów po poprzedniej kompilacji i ponownie zbudowałeś apk. </font><font style=vertical-align:inherit>arsc nie zostanie utworzony ponownie, ale zostanie pobrany z instancji buforowanej, ponieważ jego skrót jest identyczny (nie jest modyfikowany). </font><font style=vertical-align:inherit>Dotyczy to również Smali (pliki DEX). </font><font style=vertical-align:inherit>Przyspiesza proces tworzenia aplikacji, pomijając ponowną kompilację.</font></font></p>
+ <p><font style=vertical-align:inherit><font style=vertical-align:inherit>Usunięcie folderu wiąże się jedynie ze zwolnieniem miejsca. </font><font style=vertical-align:inherit>Następnie podczas następnej kompilacji. </font><font style=vertical-align:inherit>dex i. </font><font style=vertical-align:inherit>arsc zostanie utworzony „od zera”, a folder zostanie utworzony od nowa. </font><font style=vertical-align:inherit>Aktywacja tej opcji umożliwia automatyczne usunięcie folderu po pomyślnej kompilacji. </font><font style=vertical-align:inherit>Aktywuj go, jeśli chcesz.</font></font></p>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Wszystko do katalogu wyjściowego </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Wszystkie pomyślnie skompilowane aplikacje zostaną automatycznie przeniesione do powyższego katalogu wyjściowego. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Zarządzanie frameworkami </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Umożliwia zarządzanie ramkami importowanymi z zewnątrz. </font><font style=vertical-align:inherit>Przycisk reset czyści listę i same pliki lokalnie, a także przywraca środowisko res. </font><font style=vertical-align:inherit>apk (ID 1) z Apktool M. </font></font></div>
+ </details>
+ </div>
+ </details>
+ </section>
+ <section id=section_three>
+ <div class=section_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Tłumaczenie aplikacji </font></font></div>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Ile języków jest obsługiwanych w tłumaczeniu? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Ponad 100 języków. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jakie opcje są dostępne w Yandex. </font><font style=vertical-align:inherit>Tłumaczyć? </font></font></summary>
+ <div class=answer_text>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Automatyczne tłumaczenie wybranych ciągów w zasobach (stringi, tablice, liczba mnoga) i small,;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Ręczne tłumaczenie zasobów (stringi, tablice, liczba mnoga) i small;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Korekta tłumaczenia;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tłumaczenie online z wyborem kilku usług tłumaczeniowych;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tłumaczenie offline;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Obsługa słownika;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tworzenie własnych słowników na podstawie istniejącego tłumaczenia;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wsparcie dla słowników MT Managera;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Łączenie języków.</font></font></li>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Ile usług tłumaczeniowych online jest dostępnych w aplikacji? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Trzy: Yandex, Google, Bing. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Nie mogę znaleźć funkcji tłumaczenia aplikacji. </font><font style=vertical-align:inherit>Jak włączyć Yandex. </font><font style=vertical-align:inherit>Przetłumaczyć i przetłumaczyć aplikację (strings.xml) na język rosyjski? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Ta funkcja jest dostępna tylko wtedy, gdy aplikacja jest zdekompilowana. </font></font><ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Dekompiluj zasoby żądanej aplikacji.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Przejdź do folderu z zdekompilowanymi plikami.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Otwórz menu menedżera plików (otwiera się po kliknięciu paska adresu) i wybierz „Tłumacz”.</font></font></li>
+ </ol>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak automatycznie przetłumaczyć aplikację? </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Dekompiluj zasoby żądanej aplikacji.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Przejdź do folderu z zdekompilowanymi plikami.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Otwórz menu menedżera plików (otwiera się po kliknięciu paska adresu) i wybierz element „Tłumacz”, następnie kliknij trzy kropki w prawym górnym rogu i wybierz element „Automatyczne tłumaczenie”.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>W menu, które zostanie otwarte, wybierz żądaną usługę tłumaczeniową, na przykład Yandex.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>W pozycji „Język źródłowy” możesz pozostawić automatyczny wybór języka docelowego „Określ język” – wybierz żądany. </font><font style=vertical-align:inherit>Domyślnie sugerowany jest język zainstalowany w systemie.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Na dole zaznacz niezbędne pola „Połącz, jeśli istnieje” lub „Zapisz tylko przetłumaczone ciągi znaków”</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz niezbędne linie i wybierz je.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Kliknij „Tłumacz”, aby przetłumaczyć ciągi znaków w formacie res/values/strings.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Po zakończeniu transferu kliknij ponownie trzy kropki w prawym górnym rogu i wybierz „Zapisz” </font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tworzymy nasz projekt (aplikację).</font></font></li>
+ </ol>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak automatycznie przetłumaczyć aplikację na mały? </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Zdekompiluj żądaną aplikację.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Przejdź do folderu z zdekompilowanymi plikami.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Otwórz menu menedżera plików (otwiera się po kliknięciu paska adresu) i wybierz „małe tłumaczenie”, następnie kliknij trzy kropki w prawym górnym rogu i wybierz „Automatyczne tłumaczenie”.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>W menu, które zostanie otwarte, wybierz żądaną usługę tłumaczeniową, na przykład Yandex.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>W pozycji „Język źródłowy” możesz pozostawić automatyczny wybór języka docelowego „Określ język” – wybierz żądany. </font><font style=vertical-align:inherit>Domyślnie sugerowany jest język zainstalowany w systemie.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz niezbędne linie i wybierz je.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Na dole zaznacz niezbędne pola „Połącz, jeśli istnieje” lub „Zapisz tylko przetłumaczone ciągi znaków”</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Kliknij „Przetłumacz”</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Po zakończeniu transferu kliknij ponownie trzy kropki w prawym górnym rogu i wybierz „Zapisz”. </font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tworzymy nasz projekt (aplikację).</font></font></li>
+ </ol>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> W „Tłumaczeniu automatycznym” dostępna jest funkcja „poprawne tłumaczenie”. </font><font style=vertical-align:inherit>Do czego jest to używane? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Aby pominąć wiersze, których nie musisz tłumaczyć: </font></font><code>true, false, %1$d/%2$d</code><font style=vertical-align:inherit><font style=vertical-align:inherit>, teraz zawiera także grafikę wektorową, odniesienia itp., a także poprawia niektóre wiersze po automatycznym tłumaczeniu. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak ręcznie przetłumaczyć aplikację? </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Zdekompiluj żądaną aplikację.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Przejdź do folderu z zdekompilowanymi plikami.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Otwórz menu menedżera plików (otwiera się po kliknięciu paska adresu), wybierz „małe tłumaczenie” i ręcznie edytuj niezbędne linie.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>W prawym górnym rogu kliknij trzy kropki i wybierz „Zapisz”</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tworzymy nasz projekt (aplikację).</font></font></li>
+ </ol>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak mogę łączyć języki, jeśli domyślne ciągi przetłumaczonej aplikacji nie zawierają niezbędnych, ale inne tak? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Po niezbędnym tłumaczeniu aplikacji przejdź do menu tłumacza, wybierz „dodaj, dodaj z” i dodaj brakujące linie z innej lokalizacji. </font><font style=vertical-align:inherit>Oczywiście następnie je tłumaczymy, jeśli zajdzie taka potrzeba. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jaki format słownika jest obsługiwany w Apktool M? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> *. </font><font style=vertical-align:inherit>am i *. </font><font style=vertical-align:inherit>mtd </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak stworzyć własny słownik z przetłumaczonego pliku? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Otwórz Yandexa. </font><font style=vertical-align:inherit>Przetłumacz, wybierz z menu opcję „Utwórz słownik”, wybierz źródło (nieprzetłumaczone ciągi znaków) i zasób docelowy (plik tłumaczenia) w folderze projektu i zapisz go. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak korzystać z zapisanego słownika? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Przy następnym dokonaniu przelewu pojawi się on w wyborze usługi tłumaczeniowej. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Gdzie mogę zdobyć gotowy słownik do tłumaczenia offline? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> W </font></font><a href="https://4pda.to/forum/index.php?showtopic=548542&amp;view=findpost&amp;p=29447386&amp;anchor=Spoil-29447386-6"><font style=vertical-align:inherit><font style=vertical-align:inherit>temacie MT Manager</font></font></a><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Skopiuj go do "Katalogu wyjściowego/słownika" (domyślnie jest to "Apktool_M/słownik" w pamięci wewnętrznej), lub po prostu zaimportuj go klikając na plik słownika w programie i dodaj go. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Następnie słownik pojawi się w Yandex. </font><font style=vertical-align:inherit>Tłumacz, w usługach automatycznego tłumaczenia. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Po przeniesieniu projekt nie jest odbierany. </font><font style=vertical-align:inherit>Zwraca błąd. </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Usuń nieprawidłowe wiersze, które są zwykle określone w dzienniku błędów kompilacji.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Aby zbudować, użyj aapt1, jeśli nie jest wbudowany w aapt2 i nie ma błędów dotyczących nieprawidłowych ciągów tłumaczeniowych.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Aplikacja może być chroniona podpisem.</font></font></li>
+ </ol>
+ </div>
+ </details>
+ </section>
+ <section id=section_four>
+ <div class=section_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Funkcja zapobiegająca podziałowi </font></font></div>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Co to jest antypodział? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Polega to na połączeniu pakietu aplikacji na Androida (podzieleniu) w jeden plik instalacyjny oraz zainstalowaniu i rozpakowaniu takich plików. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak zbudować apkę z podziałów? </font><font style=vertical-align:inherit>Gdzie znajduje się ta opcja? </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>W menu kontekstowym „Antysplit”. </font><font style=vertical-align:inherit>Wywoływane po krótkim dotknięciu apks/xapk.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>W menu kontekstowym „Antysplit”. </font><font style=vertical-align:inherit>Wywoływane przez dotknięcie grupy wstępnie wybranych/wybranych aplikacji.</font></font></li>
+ </ol><font style=vertical-align:inherit><font style=vertical-align:inherit> Następnie wybierz niezbędne narzędzie do kompilacji: aapt2 lub aapt, jeśli aplikacja nie została zbudowana jako pierwsza. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Czy mogę zbudować apkę z zainstalowanego podziału? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Tak. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Wybieramy zainstalowaną aplikację na liście aplikacji i długim dotknięciem wywołujemy element „Antisplit”. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Gdzie znajduje się zebrany plik? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Apk znajduje się w domyślnym folderze roboczym: internal_memory/Apktool_M. </font></font><br>
+ <small><i><font style=vertical-align:inherit><font style=vertical-align:inherit>Na koniec kompilacji pojawi się przycisk „Zainstaluj”, ale jeśli przytrzymasz go przez dłuższy czas, otworzy się folder z plikiem.</font></font></i></small>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Instrukcje krok po kroku dotyczące konwersji plików Apks na Apki za pomocą Apktool M. </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierz żądany plik (Apki) i kliknij go.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Następnie z wyświetlonego menu wybierz opcję „Antisplit”.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Następnie ponownie kliknij przycisk „Antisplit” (najpierw upewnij się, że wszystkie pliki, czyli wszystkie checkboxy zostały włączone).</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Następnie wybierz żądane narzędzie (aapt2 lub aapt, jeśli aplikacja nie jest skompilowana) i kliknij przycisk „Wybierz”.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Poczekaj na zakończenie całego procesu.</font></font></li>
+ </ol><font style=vertical-align:inherit><font style=vertical-align:inherit> Teraz Twoje Apki zamieniły się w Apk i możesz z nimi pracować jak ze zwykłym plikiem Apk. </font></font></div>
+ </details>
+ </section>
+ <section id=section_five>
+ <div class=section_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Tworzenie niestandardowego podpisu </font></font></div>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak utworzyć swój podpis? </font></font></summary>
+ <div class=answer_text>
+ <p><font style=vertical-align:inherit><font style=vertical-align:inherit>Przejdź do „Ustawienia” → „Podpis”, wybierz „Utwórz klucz”.</font></font></p>
+ <li><small><i><font style=vertical-align:inherit><font style=vertical-align:inherit>W ustawieniach podpisu możesz ustawić nazwę plików RSA/SF, a także nazwę twórcy podpisu V1</font></font></i></small></li><br><font style=vertical-align:inherit><font style=vertical-align:inherit> W menu, które zostanie otwarte, wypełnij następujące wiersze: </font></font><p><u><font style=vertical-align:inherit><font style=vertical-align:inherit>Algorytm podpisu:</font></font></u><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Różnica w długości skrótu certyfikatu (po podpisaniu apk). </font><font style=vertical-align:inherit>SHA256 z RSA jest optymalne. </font><font style=vertical-align:inherit>Domyślnie zostawiamy to. </font><font style=vertical-align:inherit>MD5 jest uważane za niepewne. </font><font style=vertical-align:inherit>Szczegółowe różnice można znaleźć w Internecie.</font></font></p>
+ <p><u><font style=vertical-align:inherit><font style=vertical-align:inherit>Typ:</font></font></u><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Określa typ magazynu. </font><font style=vertical-align:inherit>Domyślnie JKS (może być również znany jako .keystore). </font><font style=vertical-align:inherit>Szczegółowe różnice można znaleźć w Internecie.</font></font></p>
+ <p><u><font style=vertical-align:inherit><font style=vertical-align:inherit>Ścieżka do klucza:</font></font></u><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Wyjściowa lokalizacja przechowywania klucza. </font><font style=vertical-align:inherit>Nazwa pliku jest wprowadzana automatycznie i możesz ją na końcu zmienić, jeśli chcesz.</font></font></p>
+ <p><u><font style=vertical-align:inherit><font style=vertical-align:inherit>Alias:</font></font></u><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Alias ​​klucza. </font><font style=vertical-align:inherit>Określane podczas importu/operacji.</font></font></p>
+ <p><u><font style=vertical-align:inherit><font style=vertical-align:inherit>Hasło do przechowywania i klucza:</font></font></u><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Hasło chroniące pamięć i sam klucz przed jego importem/użyciem. </font><font style=vertical-align:inherit>Dla wygody możesz uczynić je identycznymi.</font></font></p>
+ <p><u><font style=vertical-align:inherit><font style=vertical-align:inherit>Rozmiar klucza:</font></font></u><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Określa liczbę bitów (długość) podpisu klucza do odczytania. </font><font style=vertical-align:inherit>Wartość domyślna to 2048. Zwiększanie rozmiaru zwiększa jego siłę kryptograficzną, ale jest trudniejszy do analizy (wolniejszy). </font><font style=vertical-align:inherit>Zestaw przy użyciu informacyjnego postępu geometrycznego (2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096 itd.)</font></font></p>
+ <p><u><font style=vertical-align:inherit><font style=vertical-align:inherit>Okres ważności:</font></font></u><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Czas od daty utworzenia, kiedy wygasa autentyczność klucza. </font><font style=vertical-align:inherit>Określone w latach.</font></font></p>
+ <p><u><font style=vertical-align:inherit><font style=vertical-align:inherit>Aby poinformować Cię o właścicielu podpisu, wymagane są następujące informacje. </font><font style=vertical-align:inherit>Podaj według potrzeb:</font></font></u><br><font style=vertical-align:inherit><font style=vertical-align:inherit> imię i nazwisko, stanowisko, organizacja, miasto, region/stan, kraj.</font></font></p>
+ <p><font style=vertical-align:inherit><font style=vertical-align:inherit>Przycisk „Zapisz” kończy tworzenie i umieszcza magazyn kluczy we wcześniej określonej ścieżce.</font></font></p>
+ <p><font style=vertical-align:inherit><font style=vertical-align:inherit>Przycisk „Utwórz i użyj” dodatkowo importuje plik końcowy w miejsce podpisu użytkownika.</font></font></p>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Czy można przekonwertować repozytoria jks/keystore na pk8+x509.pem? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Tak to mozliwe. </font></font></div>
+ </details>
+ </section>
+ <section id=section_six>
+ <div class=section_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Menedżer plików </font></font></div>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Czy Apktool ma pełnoprawnego menedżera plików? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Tak. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak uzyskać dostęp do menu menedżera plików? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Menu otwiera się po kliknięciu paska adresu. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jakie ma funkcje? </font></font></summary>
+ <div class=answer_text>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>usuwanie plików;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>kopiowanie go;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>zmiana nazwy, w tym zmiana nazwy wsadowej;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>tworzenie listy plików;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>archiwizacja;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>właściwości plików i folderów;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>pełne wyszukiwanie;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>zakładki;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>historia ostatnio otwieranych plików;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>okno dialogowe właściwości pliku apk/apks to osobny temat;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>podgląd wektorowych plików xml/svg, a także konwersja obrazów do wektora;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>podgląd czcionek ttf/otf;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>operacje wsadowe z wybranymi aplikacjami lub obrazami poprzez długie naciśnięcie;</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>w folderach projektu we właściwościach plików zasobów znajduje się ich identyfikator z public.xml (jeśli istnieje).</font></font></li>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak otworzyć menu kontekstowe podczas przeglądania plików? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Długo dotknij samego pliku. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jakie pozycje są dostępne w menu kontekstowym? </font></font></summary>
+ <div class=answer_text>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wyślij plik(i)...</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Otwórz w...</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Usunąć.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Zmień nazwę.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Ściskać.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wypakuj tutaj.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wyodrębnij do „Nazwy pliku”</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Zobacz zawartość.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Cechy.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Kopiuj.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Cięcie.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>MPatcher.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Wybierać.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Zaznacz wszystko.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Skopiuj nazwę.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Skopiuj ścieżkę.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Dodaj do zakładek.</font></font></li>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak wybrać plik/folder? </font></font></summary>
+ <div class=answer_text>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Naciśnij długo sam plik/folder lub ikonę.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Po wybraniu pliku/folderu poprzez długie kliknięcie na ikonę, można długo kliknąć na ikonę innego pliku, wybrać pliki „od i do”.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Możesz także szybko wybrać wszystko, naciskając długo ikonę „wstecz” (..)</font></font></li>
+ </ol>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak zmienić nazwy plików? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Długie kliknięcie pliku powoduje wyświetlenie okna dialogowego zmiany nazwy. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> W tym samym oknie dialogowym, klikając długo „auto”, możesz zmienić jego nazwę na tryb automatyczny za pomocą szablonów. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak mogę edytować plik za pomocą zewnętrznego edytora bezpośrednio z aplikacji? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Długie naciśnięcie pliku → w wyskakującym menu kontekstowym wybierz „Otwórz w”... </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak utworzyć archiwum plików? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Z menu kontekstowego wybierz „Kompresuj”. </font><font style=vertical-align:inherit>Archiwizując pliki, możesz dodać je do istniejącego archiwum. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Czy mogę usunąć lub zastąpić pliki/foldery w archiwach (w tym pliki APK) bez ich demontażu/asemblowania? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Tak.</font></font><br>
+ <ol>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Naciśnij długo archiwum/.apk i wybierz „Wyświetl zawartość” z wyskakującego menu.</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Użyj długiego dotknięcia, aby wybrać, co chcesz usunąć lub wyodrębnić.</font></font></li>
+ </ol><font style=vertical-align:inherit><font style=vertical-align:inherit> Po niezbędnych manipulacjach plik zostanie automatycznie ponownie złożony i podpisany. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Oryginalny plik jest zapisywany z rozszerzeniem .bak. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak mogę zastąpić plik lub folder już edytowanym w zdemontowanym pliku APK? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Naciśnij długo żądany plik i wybierz „Wyodrębnij tutaj” z menu kontekstowego... </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Jeśli chcesz na przykład zastąpić obraz w folderze do rysowania, musisz dodać folder res z zamiennikiem do apk, który zawiera folder do rysowania, który z kolei zawiera obraz.</font></font><br>
+ <p>
+ <span class=warning_text><font style=vertical-align:inherit><font style=vertical-align:inherit>Innymi słowy, ważne jest zachowanie struktury katalogów!</font></font></span>
+ </p><font style=vertical-align:inherit><font style=vertical-align:inherit> Po wykonaniu niezbędnych działań zarchiwizujemy plik z rozszerzeniem apk z powrotem. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Podpisujemy to. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Czy Apktool M ma pełnoprawną wyszukiwarkę? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Tak. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Dostępne jest zarówno wyszukiwanie plików, nazwy plików, wyszukiwanie tekstowe w plikach, jak i zainstalowane aplikacje. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Ręczne wprowadzenie adresu jest wyzwalane przez długie naciśnięcie adresu. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Czy aplikacja umożliwia wyszukiwanie wyrażeń regularnych? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Tak. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak zacząć korzystać z wyszukiwania? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Otwórz menu menedżera plików, klikając adres. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Nie znalazłem wyszukiwania folderów. </font><font style=vertical-align:inherit>Tylko w pliku. </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Nie musisz trzymać samego folderu, ale przejdź do samego folderu, w którym będzie wyszukiwanie, następnie kliknij „strzałkę lub ścieżkę do folderu/pliku” i pojawi się menu wyszukiwania. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Czy wszystkie wyniki wyszukiwania są zapisywane i jak je znaleźć? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Tak. </font><font style=vertical-align:inherit>Historia wyszukiwania zostanie zapisana. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Pozycja pojawia się w menu Eksploratora (kliknij na adres u góry) lub po długim naciśnięciu ikony wyszukiwania w dolnym panelu, jeśli jest tam włączona. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Możesz także wyszukiwać w samych wynikach wyszukiwania. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Jeśli niczego nie szukałeś, oznacza to, że brakuje tego elementu. </font></font></div>
+ </details>
+ </section>
+ <section id=section_seven>
+ <div class=section_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Różny </font></font></div>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Czy Apktool ma funkcję klonowania? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Tak. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Wymaga to pełnej dekompilacji aplikacji. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak inaczej mogę sklonować aplikację? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Użyj łatki w programie MPatcher. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak mogę usunąć niepotrzebne języki z aplikacji, z wyjątkiem ru, eng? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> W menu kontekstowym wybierz element „ Optymalizuj (aapt2). </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> W ustawieniach tego elementu zaznacz pole „Ustaw konfigurację” i określ język, który musisz opuścić, w tym przypadku jest to „ru, ru-rRU” . </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak usunąć wszystkie języki z wyjątkiem rosyjskiego, ukraińskiego i angielskiego? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Podobnie do usuwania wszystkich języków z wyjątkiem rosyjskiego i angielskiego. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> W pozycji „Ustaw konfigurację” określ języki, które chcesz pozostawić, na przykład „ru, ru-rRU, uk, ru-rUA, uk-rRU”. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak mogę wyświetlić listę zainstalowanych aplikacji? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> W prawym górnym rogu - zakładka „Aplikacje”. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak edytować cały Manifest w aplikacji? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Cały manifest jest edytowany podczas dekompilacji zasobów. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Czy jest wbudowany konwerter wartości? </font></font></summary>
+ <div class=answer_text>
+ <p><font style=vertical-align:inherit><font style=vertical-align:inherit>Tak.</font></font></p>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak się tam dostanę? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Ekran główny → Trzy godziny w prawym górnym rogu → Konwerter. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jakie wartości są obsługiwane? </font></font></summary>
+ <div class=answer_text>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tekst ↔ SHA-384</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tekst ↔ SHA-224</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tekst ↔ SHA-256</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tekst ↔ SHA-512</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tekst tekstu SHA-1</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tekst ↔ MD5</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tekst ↔ kodowanie URL</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tekst ↔ Unicode</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>↔ Tekst Base64</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tekst ↔ Tablica (US-ASCII)</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tekst ↔ Tablica (UTF-16LE)</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tekst ↔ Tablica (UTF-16BE)</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tekst ↔ Tablica (UTF-8)</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tekst ↔ Tablica (CP1251)</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Tekst ↔ Tablica (ISO-8859-1)</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Dziesiętny ↔ ósemkowy</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Dziesiętny ↔ Binarny</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>↔ Mały kolor</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Dziesiętny ↔ Szesnastkowy (0x0)</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Dziesiętny ↔ Szesnastkowy (0x00000000)</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Dziesiętny ↔ Szesnastkowy</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Pływakowy ↔ Binarny</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Pływający ↔ ósemkowy</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Pływak ↔ Heks</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Pływak ↔ Hex (0x0)</font></font></li>
+ <li><font style=vertical-align:inherit><font style=vertical-align:inherit>Pływak ↔ Szesnastkowy (0x00000000)</font></font></li>
+ <p><u><font style=vertical-align:inherit><font style=vertical-align:inherit>Proszę zanotować!</font></font></u></p><font style=vertical-align:inherit><font style=vertical-align:inherit> Wszystkie szyfry, które są kompatybilne wstecz, można konwertować z powrotem. </font><font style=vertical-align:inherit>Odbywa się to w dolnym oknie wejściowym. </font></font></div>
+ </details>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak zaktualizować Apktool M? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Ekran główny → Trzy godziny w prawym górnym rogu → „Ustawienia” → „Aktualizacja programu” włącz opcję „Sprawdź dostępność aktualizacji”. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Poniżej możesz wybrać pozycję „Częstotliwość sprawdzania aktualizacji”. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak pobrać aktualizację? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Z samego Apktool M lub pobierz przez przeglądarkę. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Gdzie jest zapisany plik aktualizacji? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Do pamięci wewnętrznej w folderze „Pobierz”. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Czy mogę wyłączyć sprawdzanie aktualizacji? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Tak, możesz. </font></font><p><font style=vertical-align:inherit><font style=vertical-align:inherit>Ekran główny → Trzy godziny w prawym górnym rogu → „Ustawienia” → „Informacje o aplikacji” → „Wyłącz sprawdzanie aktualizacji”.</font></font></p>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak mogę przywrócić dane z kopii zapasowej? </font><font style=vertical-align:inherit>Mój element przywracania jest nieaktywny... </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Aby odzyskać, musisz najpierw zapisać swoje konto. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Plik kopii zapasowej musi znajdować się w ścieżce: „/internal_memory/Apktool_M.backup”, jeżeli go nie ma, element jest nieaktywny. </font></font></div>
+ </details>
+ </section>
+ <section id=section_eight>
+ <div class=section_title><font style=vertical-align:inherit><font style=vertical-align:inherit> MPatcher </font></font></div>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Co to jest MPatcher? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Jest to aplikacja do uruchamiania, tworzenia, importowania, eksportowania skryptów i poprawek napisanych w Shell, zintegrowana z Apktool M. </font></font></div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Czy na forum jest osobny temat? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Tak: </font></font><a href="https://4pda.to/forum/index.php?showtopic=1018077"><font style=vertical-align:inherit><font style=vertical-align:inherit>MPatcher</font></font></a>
+ </div>
+ </details>
+ <details class=details_block>
+ <summary class=question_title><font style=vertical-align:inherit><font style=vertical-align:inherit> Jak wywołać MPatchera? </font></font></summary>
+ <div class=answer_text><font style=vertical-align:inherit><font style=vertical-align:inherit> Naciśnij długo plik i wybierz „MPatcher” z menu kontekstowego, które się otworzy. </font></font><br><font style=vertical-align:inherit><font style=vertical-align:inherit> Spowoduje to określenie docelowej aplikacji. </font></font><p><font style=vertical-align:inherit><font style=vertical-align:inherit>Aby wybrać docelowy projekt - powyżej „Buduj” znajduje się menu rozwijane, znajduje się tam pozycja MPatcher.</font></font></p>
+ </div>
+ </details>
+ </section>
+ <div id=goog-gt-tt class="VIpgJd-yAWNEb-L7lbkb skiptranslate sf-hidden" style='border-radius:12px;margin:0 0 0-23px;padding:0;font-family:"Google Sans",Arial,sans-serif' data-id></div>
